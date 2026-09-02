@@ -11,8 +11,8 @@ for i in range(num_expenses):
 
 
 for i in range(num_expenses):
-    print("Barang no ", i+1, ": ", expenses[i][0])
-    print("Harga barang: ", expenses[i][1])
+    print("Item no ", i+1, ": ", expenses[i][0])
+    print("Item Price: ", expenses[i][1])
 
 total = 0
 for expense in expenses:
