@@ -9,6 +9,9 @@ else:
     for i in range(num_expenses):
         description = input("Enter description: ")
         amount = int(input("Enter expense: "))
+        while amount <= 0:
+            print("Please input the valid price.")
+            amount = int(input("Enter expense: "))
 
         expense = [description, amount]
         expenses.append(expense)
