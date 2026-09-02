@@ -31,6 +31,10 @@ for expense in expenses:
         minimum = expense[1]
         min_desc = expense[0]
 
+average = total/num_expenses
+
+
 print("Total:", total)
 print("Most Pricy Item: ", max_desc, " Price : ", maximum)
 print("Cheapest Item: ", min_desc, " Price : ", minimum)
+print("Average Spent: ", average)
