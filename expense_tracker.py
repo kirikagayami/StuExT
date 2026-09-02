@@ -18,5 +18,19 @@ total = 0
 for expense in expenses:
     total += expense[1]
     
+maximum = 0
+max_desc = ""
+minimum = expenses[0][1]
+min_desc = expenses[0][0]
+for expense in expenses:
+    if expense[1] > maximum:
+        maximum = expense[1]
+        max_desc = expense[0]
+    
+    if expense[1] < minimum:
+        minimum = expense[1]
+        min_desc = expense[0]
 
 print("Total:", total)
+print("Most Pricy Item: ", max_desc, " Price : ", maximum)
+print("Cheapest Item: ", min_desc, " Price : ", minimum)
