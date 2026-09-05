@@ -21,10 +21,11 @@ else:
         print("Item no ", i+1, ": ", expenses[i][0])
         print("Item Price: ", expenses[i][1])
 
+# Loop to add total expenses
     total = 0
     for expense in expenses:
         total += expense[1]
-        
+
     maximum = 0
     max_desc = ""
     minimum = expenses[0][1]
