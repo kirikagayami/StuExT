@@ -23,16 +23,21 @@ while option != 4:
         expenses.append(expense)
         print()
     
-    if len(expenses) == 0:
-            print ("No data available.")
-    else:
-        if option == 2:
+    # if len(expenses) == 0:
+    #         print ("No data available.")
+    # else:
+    if option == 2:
+        if len(expenses) == 0:
+            print("No data available.")
+        else:
             for i in range(len(expenses)):
                 print("Item no ", i+1, ": ", expenses[i][0])
                 print("Item Price: ", expenses[i][1])
                 print()
-    
-        if option == 3:
+    if option == 3:
+        if len(expenses) == 0:
+            print("No data available.")
+        else:
             total = 0
             for expense in expenses:
                 total += expense[1]
@@ -56,3 +61,4 @@ while option != 4:
             average = total/len(expenses)
             print("Average Spent: ", average)
             print()
+print("Goodbye...")
