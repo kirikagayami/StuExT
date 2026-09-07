@@ -11,6 +11,7 @@ while option != 4:
     option = int(input("Choose an option: "))
     print()
     
+    
     if option == 1:
         description = input("Enter description: ")
         amount = int(input("Enter expense: "))
@@ -61,4 +62,7 @@ while option != 4:
             average = total/len(expenses)
             print("Average Spent: ", average)
             print()
+    if option != 1 and option != 2 and option != 3 and option != 4:
+        print("Invalid option. Please choose 1-4.")
+        print()
 print("Goodbye...")
